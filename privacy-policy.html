@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>개인정보처리방침 | Here And Then</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+      background-color: #f9f9f7;
+      color: #1a1a1a;
+      line-height: 1.8;
+    }
+
+    header {
+      background-color: #ffffff;
+      border-bottom: 1px solid #e8e8e4;
+      padding: 24px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      color: #1a1a1a;
+    }
+
+    header p {
+      font-size: 13px;
+      color: #888;
+      margin-top: 4px;
+    }
+
+    .lang-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin: 32px auto 0;
+      max-width: 680px;
+      padding: 0 24px;
+    }
+
+    .lang-tab {
+      padding: 8px 20px;
+      border-radius: 20px;
+      border: 1px solid #ddd;
+      background: #fff;
+      font-size: 14px;
+      cursor: pointer;
+      color: #555;
+      transition: all 0.2s;
+    }
+
+    .lang-tab.active {
+      background: #1a1a1a;
+      color: #fff;
+      border-color: #1a1a1a;
+    }
+
+    .content {
+      max-width: 680px;
+      margin: 32px auto 80px;
+      padding: 0 24px;
+    }
+
+    .lang-section {
+      display: none;
+    }
+
+    .lang-section.active {
+      display: block;
+    }
+
+    .effective-date {
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 32px;
+    }
+
+    .intro {
+      font-size: 15px;
+      color: #444;
+      margin-bottom: 40px;
+      padding: 20px;
+      background: #fff;
+      border-radius: 12px;
+      border: 1px solid #e8e8e4;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    section h2 {
+      font-size: 17px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #e8e8e4;
+    }
+
+    section p {
+      font-size: 15px;
+      color: #444;
+      margin-bottom: 10px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #f0f0ec;
+      color: #555;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      font-size: 15px;
+      color: #444;
+      padding: 6px 0 6px 16px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: '–';
+      position: absolute;
+      left: 0;
+      color: #aaa;
+    }
+
+    .third-party-card {
+      background: #fff;
+      border: 1px solid #e8e8e4;
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-bottom: 12px;
+    }
+
+    .third-party-card h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin-bottom: 8px;
+    }
+
+    .third-party-card p,
+    .third-party-card a {
+      font-size: 13px;
+      color: #666;
+    }
+
+    .third-party-card a {
+      color: #4a7cf7;
+      text-decoration: none;
+      word-break: break-all;
+    }
+
+    .contact-box {
+      background: #fff;
+      border: 1px solid #e8e8e4;
+      border-radius: 12px;
+      padding: 20px;
+    }
+
+    .contact-box p {
+      font-size: 15px;
+      color: #444;
+      margin: 0;
+    }
+
+    .contact-box a {
+      color: #4a7cf7;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 13px;
+      color: #aaa;
+      border-top: 1px solid #e8e8e4;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Here And Then</h1>
+  <p>개인정보처리방침 · Privacy Policy</p>
+</header>
+
+<div class="lang-tabs">
+  <button class="lang-tab active" onclick="switchLang('ko', this)">한국어</button>
+  <button class="lang-tab" onclick="switchLang('en', this)">English</button>
+</div>
+
+<div class="content">
+
+  <!-- 한국어 -->
+  <div class="lang-section active" id="section-ko">
+
+    <p class="effective-date">시행일: 2026년 3월 17일</p>
+
+    <div class="intro">
+      Here And Then(이하 "서비스")은 이용자의 개인정보를 중요하게 생각하며,
+      「개인정보 보호법」 및 관련 법령을 준수합니다.
+      본 방침은 서비스가 수집하는 정보와 그 이용 방법을 안내합니다.
+    </div>
+
+    <section>
+      <h2>1. 수집하는 개인정보 항목</h2>
+      <span class="tag">필수 항목</span>
+      <ul>
+        <li>이메일 주소 (Google 계정 로그인 시)</li>
+        <li>닉네임 (사용자가 직접 입력)</li>
+        <li>프로필 사진 (사용자가 직접 업로드, 선택 사항)</li>
+      </ul>
+      <br />
+      <span class="tag">서비스 이용 중 생성되는 정보</span>
+      <ul>
+        <li>일기 내용 (제목, 본문, 날짜, 기분, 날씨)</li>
+        <li>위치 정보 (일기 작성 시 지도에서 선택한 장소)</li>
+        <li>첨부 사진 및 동영상</li>
+        <li>그룹 정보 (이름, 색상, 아이콘)</li>
+        <li>기기 정보 및 앱 이용 기록</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>2. 개인정보 수집 목적</h2>
+      <ul>
+        <li>회원 식별 및 서비스 제공</li>
+        <li>일기 데이터의 저장·조회·관리</li>
+        <li>테마, 언어 등 사용자 설정 유지</li>
+        <li>서비스 품질 개선</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. 개인정보 보유 및 이용 기간</h2>
+      <ul>
+        <li>회원 탈퇴 시 모든 개인정보(프로필, 일기, 그룹, 미디어 파일)를 즉시 삭제합니다.</li>
+        <li>관련 법령에 의해 보존이 필요한 경우, 해당 기간 동안 보관 후 삭제합니다.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. 개인정보의 제3자 제공</h2>
+      <p>서비스는 이용자의 개인정보를 원칙적으로 제3자에게 제공하지 않습니다. 다만, 서비스 운영을 위해 아래 외부 서비스를 이용합니다.</p>
+
+      <div class="third-party-card">
+        <h3>Google Firebase</h3>
+        <p>목적: 인증, 데이터베이스, 파일 저장 (Authentication / Firestore / Cloud Storage)</p>
+        <p>제공 정보: 이메일, 닉네임, 업로드된 미디어 파일</p>
+        <a href="https://firebase.google.com/support/privacy" target="_blank">개인정보처리방침 보기 →</a>
+      </div>
+
+      <div class="third-party-card">
+        <h3>Google Maps Platform</h3>
+        <p>목적: 지도 표시 및 위치 기반 기능 제공</p>
+        <a href="https://policies.google.com/privacy" target="_blank">개인정보처리방침 보기 →</a>
+      </div>
+
+      <div class="third-party-card">
+        <h3>Google Sign-In</h3>
+        <p>목적: 소셜 로그인 인증</p>
+        <p>제공 정보: 이메일 주소</p>
+        <a href="https://policies.google.com/privacy" target="_blank">개인정보처리방침 보기 →</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>5. 개인정보의 파기</h2>
+      <p>이용자가 회원 탈퇴를 요청하면 즉시 아래 데이터를 삭제합니다.</p>
+      <ul>
+        <li>Firebase Authentication 계정</li>
+        <li>Firestore에 저장된 프로필, 일기, 그룹 데이터</li>
+        <li>Firebase Storage에 저장된 사진 및 동영상</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>6. 이용자의 권리</h2>
+      <p>이용자는 언제든지 다음 권리를 행사할 수 있습니다.</p>
+      <ul>
+        <li>개인정보 열람 요청</li>
+        <li>개인정보 정정·삭제 요청</li>
+        <li>개인정보 처리 정지 요청</li>
+        <li>회원 탈퇴 — 앱 내 프로필 → 회원 탈퇴</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>7. 위치정보 처리</h2>
+      <ul>
+        <li>일기 작성 시 지도에서 직접 선택한 위치 정보만 저장됩니다.</li>
+        <li>기기의 현재 위치는 지도 표시 용도로만 사용되며, 서버에 저장되지 않습니다.</li>
+        <li>위치 권한은 기기 설정에서 언제든지 철회할 수 있습니다.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>8. 아동의 개인정보 보호</h2>
+      <p>서비스는 만 14세 미만 아동의 가입을 허용하지 않으며, 아동의 개인정보를 의도적으로 수집하지 않습니다.</p>
+    </section>
+
+    <section>
+      <h2>9. 개인정보처리방침 변경</h2>
+      <p>본 방침이 변경될 경우, 앱 내 공지 또는 이 페이지를 통해 시행일 7일 전부터 사전 안내합니다.</p>
+    </section>
+
+    <section>
+      <h2>10. 문의처</h2>
+      <div class="contact-box">
+        <p>개인정보 관련 문의사항은 아래 이메일로 연락해 주세요.<br />
+        이메일: <a href="mailto:your@email.com">your@email.com</a></p>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- English -->
+  <div class="lang-section" id="section-en">
+
+    <p class="effective-date">Effective Date: March 17, 2026</p>
+
+    <div class="intro">
+      Here And Then ("the Service") values your privacy and complies with applicable data protection laws.
+      This policy explains what information we collect and how we use it.
+    </div>
+
+    <section>
+      <h2>1. Information We Collect</h2>
+      <span class="tag">Required</span>
+      <ul>
+        <li>Email address (via Google Sign-In)</li>
+        <li>Nickname (entered by the user)</li>
+        <li>Profile photo (uploaded by the user, optional)</li>
+      </ul>
+      <br />
+      <span class="tag">Generated During Use</span>
+      <ul>
+        <li>Diary content (title, body, date, mood, weather)</li>
+        <li>Location data (place selected on the map when creating a diary)</li>
+        <li>Attached photos and videos</li>
+        <li>Group information (name, color, icon)</li>
+        <li>Device information and usage logs</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>2. How We Use Your Information</h2>
+      <ul>
+        <li>Identify users and provide the Service</li>
+        <li>Store, retrieve, and manage diary data</li>
+        <li>Maintain user preferences (theme, language)</li>
+        <li>Improve service quality</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. Retention Period</h2>
+      <ul>
+        <li>All personal data (profile, diaries, groups, media) is deleted immediately upon account deletion.</li>
+        <li>Data required to be retained by law will be kept for the legally mandated period before deletion.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. Third-Party Services</h2>
+      <p>We do not sell or share your data with third parties except for the following services required to operate the app.</p>
+
+      <div class="third-party-card">
+        <h3>Google Firebase</h3>
+        <p>Purpose: Authentication, database, file storage (Authentication / Firestore / Cloud Storage)</p>
+        <p>Data shared: Email, nickname, uploaded media files</p>
+        <a href="https://firebase.google.com/support/privacy" target="_blank">View Privacy Policy →</a>
+      </div>
+
+      <div class="third-party-card">
+        <h3>Google Maps Platform</h3>
+        <p>Purpose: Map display and location-based features</p>
+        <a href="https://policies.google.com/privacy" target="_blank">View Privacy Policy →</a>
+      </div>
+
+      <div class="third-party-card">
+        <h3>Google Sign-In</h3>
+        <p>Purpose: Social login authentication</p>
+        <p>Data shared: Email address</p>
+        <a href="https://policies.google.com/privacy" target="_blank">View Privacy Policy →</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>5. Data Deletion</h2>
+      <p>When you delete your account, the following data is immediately removed:</p>
+      <ul>
+        <li>Firebase Authentication account</li>
+        <li>All Firestore data (profile, diaries, groups)</li>
+        <li>All Firebase Storage files (photos and videos)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>6. Your Rights</h2>
+      <p>You may exercise the following rights at any time:</p>
+      <ul>
+        <li>Access your personal data</li>
+        <li>Request correction or deletion of your data</li>
+        <li>Request restriction of processing</li>
+        <li>Delete your account — Profile → Delete Account in the app</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>7. Location Information</h2>
+      <ul>
+        <li>Only the location you manually select on the map when creating a diary is stored.</li>
+        <li>Your device's current location is used solely to display the map and is never stored on our servers.</li>
+        <li>You may revoke location permissions at any time in your device settings.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>8. Children's Privacy</h2>
+      <p>The Service is not intended for children under the age of 14. We do not knowingly collect personal information from children.</p>
+    </section>
+
+    <section>
+      <h2>9. Changes to This Policy</h2>
+      <p>If this policy changes, we will notify you via an in-app notice or by updating this page at least 7 days before the changes take effect.</p>
+    </section>
+
+    <section>
+      <h2>10. Contact</h2>
+      <div class="contact-box">
+        <p>For privacy-related inquiries, please contact us at:<br />
+        Email: <a href="mailto:your@email.com">your@email.com</a></p>
+      </div>
+    </section>
+
+  </div>
+
+</div>
+
+<footer>
+  &copy; 2026 Here And Then. All rights reserved.
+</footer>
+
+<script>
+  function switchLang(lang, btn) {
+    document.querySelectorAll('.lang-section').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.lang-tab').forEach(el => el.classList.remove('active'));
+    document.getElementById('section-' + lang).classList.add('active');
+    btn.classList.add('active');
+  }
+</script>
+
+</body>
+</html>
